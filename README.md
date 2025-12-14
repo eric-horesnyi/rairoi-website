@@ -6,7 +6,7 @@ A comprehensive Next.js website presenting the RAIROI (Responsible AI Return on 
 
 - **Home Page**: Interactive J-Curve animation and aggregate ROI ticker
 - **Methodology Page**: Economic theory, 5-Dimension framework, and Swarm Architecture
-- **Case Studies**: Strategic heatmaps for Air Liquide, Carrefour, Bouygues Telecom, and Banque de France
+- **Case Studies**: Strategic heatmaps for Air Liquide, Bouygues Telecom, and Banque de France
 - **Results & Data**: Sortable tables with empirical evidence from CAC40, DJI, and NASDAQ
 - **ROI Simulator**: Interactive tool for estimating AI transformation ROI
 
@@ -104,7 +104,7 @@ Displays aggregate value unlocked and ROI percentages for major stock indices (C
 ## Data Sources
 
 The website uses hardcoded sample data based on:
-- Real case studies from Air Liquide, Carrefour, Bouygues Telecom, and Banque de France
+- Real case studies from Air Liquide, Bouygues Telecom, and Banque de France
 - Empirical analysis of CAC40, Dow Jones, and NASDAQ-100 companies
 - Calibrated ROI calculations from the RAIROI model
 
@@ -117,4 +117,5 @@ The website uses hardcoded sample data based on:
 ## License
 
 Proprietary - RAIROI Project
+
 

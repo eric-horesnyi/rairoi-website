@@ -1,5 +1,6 @@
 'use client'
 
+// Results page displaying company ROI data
 import { motion } from 'framer-motion'
 import { useState } from 'react'
 import { ArrowUpDown, ArrowUp, ArrowDown } from 'lucide-react'
@@ -21,7 +22,6 @@ const sampleData: CompanyData[] = [
   { company: 'Dassault Systèmes', sector: 'Software', roi: '206%', ebitdaImpact: '+6.1%', topInitiative: 'Coding Assistants', index: 'CAC40' },
   { company: 'Bouygues Telecom', sector: 'Telecom', roi: '17.9x', ebitdaImpact: '+46.7%', topInitiative: 'Kinetic Insights', index: 'CAC40' },
   { company: 'Air Liquide', sector: 'Industrial', roi: '190%', ebitdaImpact: '+25.6%', topInitiative: 'Nexus Intelligence', index: 'CAC40' },
-  { company: 'Carrefour', sector: 'Retail', roi: '790%', ebitdaImpact: '+12.3%', topInitiative: 'Predictive Procurement AI', index: 'CAC40' },
   { company: 'Amundi', sector: 'Financial Services', roi: '185%', ebitdaImpact: '+4.5%', topInitiative: 'Portfolio Optimization', index: 'CAC40' },
   { company: 'Edenred', sector: 'Financial Services', roi: '198%', ebitdaImpact: '+5.2%', topInitiative: 'Transaction Intelligence', index: 'CAC40' },
   { company: 'Fnac Darty SA', sector: 'Consumer Discretionary', roi: '175%', ebitdaImpact: '+3.8%', topInitiative: 'Omnichannel Personalization', index: 'CAC40' },
