@@ -490,9 +490,9 @@ export default function MethodologyPage() {
                       <div className="font-bold text-xl text-deep-navy mb-2">Director</div>
                       <div className="font-semibold text-base text-deep-navy mb-3">Responsible AI Transformation Plan</div>
                       <div className="text-sm text-gray-700 space-y-1">
-                        <div>6 supervisors</div>
-                        <div>46 Workers</div>
-                        <div>33 Tools</div>
+                        <div>7 supervisors</div>
+                        <div>60 workers</div>
+                        <div>43 tools</div>
                       </div>
                     </div>
                   </div>
