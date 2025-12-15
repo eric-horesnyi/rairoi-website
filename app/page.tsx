@@ -17,7 +17,8 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             className="text-5xl md:text-6xl font-bold text-deep-navy mb-6"
           >
-            Bridging the Gap between Responsible AI and ROI
+            <span className="block">Responsible AI</span>
+            <span className="block">Return On Investment</span>
           </motion.h1>
           <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed">
             From initial investment to sustained acceleration: observations from analyzing AI transformations 
