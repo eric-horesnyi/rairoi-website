@@ -508,7 +508,7 @@ export default function MethodologyPage() {
                   
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6 px-4">
                     {[
-                      { name: "Supervisor 1 Introduction", workers: "0 Worker", tools: "2 Tools", outputs: ["Cover Page", "Introduction"] },
+                      { name: "Supervisor 1 Calibration & Introduction", workers: "14 Workers", tools: "6 Tools", outputs: ["crawl", "ingest", "learn", "verify", "eval", "exec summary", "assemble"] },
                       { name: "Supervisor 2 Market Study", workers: "12 Workers", tools: "9 Tools", outputs: ["Executive Summary", "Who buys: Customer Segmentation", "What do they buy: Product & Value Proposition", "Where and how they buy: Geography & Distribution", "Who else: Competitive Position & Market Share", "What is the opportunity: Market Sizing & Growth", "Sources"] },
                       { name: "Supervisor 3 Strategic Analysis", workers: "7 Workers", tools: "5 Tools", outputs: ["Executive Summary", "PESTEL Analysis", "Competitive Positioning", "Porter's Value Chain", "SWOT", "7S", "Porter's Five Forces", "Sources"] },
                       { name: "Supervisor 4 Org Portrait", workers: "8 Workers", tools: "6 Tools", outputs: ["Executive Summary", "Org Grid: Star", "Headcount by Department", "Role x Skill Heatmap: Proficiency", "Culture Radar", "Change Readiness Score", "Sources"] },
