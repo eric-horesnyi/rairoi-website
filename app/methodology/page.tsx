@@ -544,9 +544,9 @@ export default function MethodologyPage() {
               </div>
             </div>
 
-            {/* Section 2: RAIJA Sequence & Structure */}
+            {/* Section 2: RAIROI Sequence & Structure */}
             <div className="mb-16 bg-white rounded-lg p-8 border-2 border-deep-navy shadow-lg">
-              <h3 className="text-2xl font-bold text-deep-navy mb-8 text-center">RAIJA Sequence & Structure</h3>
+              <h3 className="text-2xl font-bold text-deep-navy mb-8 text-center">RAIROI Sequence & Structure</h3>
               
               {/* Process Flow */}
               <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-2">
@@ -608,7 +608,7 @@ export default function MethodologyPage() {
                 <pre className="text-sm text-gray-300 font-mono leading-relaxed">
 {`class BaseAgent:
     """
-    Base class for all RAIJA agents ensuring consistent
+    Base class for all RAIROI agents ensuring consistent
     logging, error handling, and security boundaries.
     """
     
