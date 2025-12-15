@@ -59,17 +59,8 @@ export default function JCurveChart() {
           />
         </AreaChart>
       </ResponsiveContainer>
-      <div className="mt-4 flex justify-center space-x-8 text-sm">
-        <div className="flex items-center">
-          <div className="w-4 h-4 bg-red-400 rounded mr-2"></div>
-          <span className="text-gray-600">Investment Phase (Intangibles)</span>
-        </div>
-        <div className="flex items-center">
-          <div className="w-4 h-4 bg-electric-blue rounded mr-2"></div>
-          <span className="text-gray-600">Value Realization (S-Curve)</span>
-        </div>
-      </div>
     </div>
   )
 }
+
 
