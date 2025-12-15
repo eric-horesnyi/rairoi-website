@@ -508,9 +508,9 @@ export default function MethodologyPage() {
                   
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6 px-4">
                     {[
-                      { name: "Supervisor 1 Calibration & Introduction", workers: "14 Workers", tools: "6 Tools", outputs: ["crawl", "ingest", "learn", "verify", "eval", "exec summary", "assemble"] },
+                      { name: "Supervisor 1 Calibration & Introduction", workers: "14 Workers", tools: "6 Tools", outputs: ["Crawl", "Ingest", "Learn", "Verify", "Eval", "Exec Summary", "Assemble"] },
                       { name: "Supervisor 2 Market Study", workers: "12 Workers", tools: "9 Tools", outputs: ["Executive Summary", "Who buys: Customer Segmentation", "What do they buy: Product & Value Proposition", "Where and how they buy: Geography & Distribution", "Who else: Competitive Position & Market Share", "What is the opportunity: Market Sizing & Growth", "Sources"] },
-                      { name: "Supervisor 3 Strategic Analysis", workers: "7 Workers", tools: "5 Tools", outputs: ["Executive Summary", "PESTEL Analysis", "Competitive Positioning", "Porter's Value Chain", "SWOT", "7S", "Porter's Five Forces", "Sources"] },
+                      { name: "Supervisor 3 Strategic Analysis", workers: "7 Workers", tools: "5 Tools", outputs: ["Executive Summary", "PESTEL Analysis", "Competitive Positioning", "Porter's Value Chain", "SWOT", "7S", "Porter's Five Forces"] },
                       { name: "Supervisor 4 Org Portrait", workers: "8 Workers", tools: "6 Tools", outputs: ["Executive Summary", "Org Grid: Star", "Headcount by Department", "Role x Skill Heatmap: Proficiency", "Culture Radar", "Change Readiness Score", "Sources"] },
                       { name: "Supervisor 5 AI Plan", workers: "9 Workers", tools: "7 Tools", outputs: ["Executive Summary", "AI Maturity v. Competition", "AI Initiatives Generation or Search", "DISC & 3 metrics", "Value Investment ROI", "ROI x Complexity", "Sources"] },
                       { name: "Supervisor 6 Journey", workers: "10 Workers", tools: "10 Tools", outputs: ["Timeline", "Resource Plan", "Factory Skills", "Horizon 1", "Horizon 2", "Horizon 3", "Training Plan"] },
