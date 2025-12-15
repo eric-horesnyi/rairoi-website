@@ -6,6 +6,9 @@ import Footer from '@/components/Footer'
 export const metadata: Metadata = {
   title: 'RAIROI - Responsible AI Return on Investment',
   description: 'A framework for understanding the Productivity J-Curve of AI adoption and measuring return on investment',
+  icons: {
+    icon: '/favicon.png',
+  },
 }
 
 export default function RootLayout({
