@@ -256,7 +256,7 @@ export default function MethodologyPage() {
                 the five dimensions relative to key competitors. This anonymized spider chart visualization 
                 illustrates how organizations can identify strategic gaps and strengths in their AI transformation journey.
               </p>
-              <div className="bg-gray-50 rounded-lg p-6">
+              <div className="bg-gray-50 rounded-lg p-6 flex justify-center items-center">
                 <AICompeteSpiderChart
                   data={[
                     {
