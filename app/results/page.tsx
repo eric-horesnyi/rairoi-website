@@ -20,7 +20,7 @@ const sampleData: CompanyData[] = [
   { company: 'Airbus', sector: 'Aerospace', roi: '172%', ebitdaImpact: '+2.8%', topInitiative: 'Predictive Maintenance', index: 'CAC40' },
   { company: 'BNP Paribas', sector: 'Banking', roi: '194%', ebitdaImpact: '+5.1%', topInitiative: 'Fraud Detection', index: 'CAC40' },
   { company: 'Dassault Systèmes', sector: 'Software', roi: '206%', ebitdaImpact: '+6.1%', topInitiative: 'Coding Assistants', index: 'CAC40' },
-  { company: 'Bouygues Telecom', sector: 'Telecom', roi: '6.4x', ebitdaImpact: '+6.7%', topInitiative: 'Kinetic Insights', index: 'CAC40' },
+  { company: 'Bouygues Telecom', sector: 'Telecom', roi: '540%', ebitdaImpact: '+6.7%', topInitiative: 'Kinetic Insights', index: 'CAC40' },
   { company: 'Air Liquide', sector: 'Industrial', roi: '190%', ebitdaImpact: '+25.6%', topInitiative: 'Nexus Intelligence', index: 'CAC40' },
   { company: 'Amundi', sector: 'Financial Services', roi: '185%', ebitdaImpact: '+4.5%', topInitiative: 'Portfolio Optimization', index: 'CAC40' },
   { company: 'Edenred', sector: 'Financial Services', roi: '198%', ebitdaImpact: '+5.2%', topInitiative: 'Transaction Intelligence', index: 'CAC40' },
