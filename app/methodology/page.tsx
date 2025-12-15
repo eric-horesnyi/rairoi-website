@@ -468,14 +468,14 @@ export default function MethodologyPage() {
           </motion.div>
         </section>
 
-        {/* Deep Dive: RAIJA Architecture */}
+        {/* Deep Dive: RAIROI Architecture */}
         <section className="mb-20 bg-[#F5F5DC] rounded-lg p-8 border-2 border-deep-navy">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6 }}
           >
-            <h2 className="text-3xl font-bold text-deep-navy mb-8 text-center">Deep Dive: RAIJA Architecture</h2>
+            <h2 className="text-3xl font-bold text-deep-navy mb-8 text-center">Deep Dive: RAIROI Architecture</h2>
 
             {/* Section 1: Hierarchical Orchestration Model */}
             <div className="mb-16 bg-[#F5F5DC] rounded-lg p-8 border-2 border-deep-navy shadow-lg">
@@ -485,7 +485,7 @@ export default function MethodologyPage() {
               <div className="flex flex-col items-center space-y-6 py-8 overflow-x-auto w-full">
                 {/* Level 1: Director */}
                 <div className="relative">
-                  <div className="bg-white border-2 border-deep-navy rounded-lg px-10 py-6 shadow-md min-w-[300px]">
+                  <div className="bg-gradient-to-br from-electric-blue/20 to-electric-blue/10 border-2 border-electric-blue rounded-lg px-10 py-6 shadow-md min-w-[300px]">
                     <div className="text-center">
                       <div className="font-bold text-xl text-deep-navy mb-2">Director</div>
                       <div className="font-semibold text-base text-deep-navy mb-3">Responsible AI Transformation Plan</div>
@@ -516,11 +516,6 @@ export default function MethodologyPage() {
                       { name: "Supervisor 6 Journey", workers: "10 Workers", tools: "10 Tools", outputs: ["Timeline", "Resource Plan", "Factory Skills", "Horizon 1", "Horizon 2", "Horizon 3", "Training Plan"] },
                     ].map((supervisor, idx) => (
                       <div key={idx} className="relative">
-                        {/* Vertical line up - elbow connection */}
-                        <div className="absolute left-1/2 -top-6 w-0.5 h-6 bg-deep-navy transform -translate-x-1/2"></div>
-                        {/* Vertical line down to outputs */}
-                        <div className="absolute left-1/2 top-full w-0.5 h-6 bg-deep-navy transform -translate-x-1/2"></div>
-                        
                         {/* Supervisor Card */}
                         <div className="bg-white border-2 border-deep-navy rounded-lg px-5 py-4 shadow-md">
                           <div className="text-center mb-3">
