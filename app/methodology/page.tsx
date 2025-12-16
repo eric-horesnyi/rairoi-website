@@ -256,7 +256,7 @@ export default function MethodologyPage() {
                 the five dimensions relative to key competitors. This anonymized spider chart visualization 
                 illustrates how organizations can identify strategic gaps and strengths in their AI transformation journey.
               </p>
-              <div className="bg-gray-50 rounded-lg p-6 flex justify-center items-center">
+              <div className="bg-gray-50 rounded-lg p-6">
                 <AICompeteSpiderChart
                   data={[
                     {
@@ -417,25 +417,25 @@ export default function MethodologyPage() {
             </div>
 
             <div className="bg-white border-2 border-electric-blue rounded-lg p-8 mb-8">
-              <h3 className="text-2xl font-semibold mb-6 text-deep-navy">Reinforcement Learning & Hyperparameter Calibration</h3>
+              <h3 className="text-2xl font-semibold mb-6 text-deep-navy">Reinforcement Learning & Hyperparameter Training</h3>
               <p className="text-gray-700 leading-relaxed mb-6">
-                The RAIROI framework employs a continuous calibration mechanism that learns from real-world outcomes. 
+                The RAIROI framework employs a continuous training mechanism that learns from real-world outcomes. 
                 Rather than relying on static models, the system uses reinforcement learning to adjust hyperparameters 
                 based on observed discrepancies between predicted and actual ROI. This process operates across multiple 
                 dimensions: confidence scores of source data, company size, sector characteristics, and temporal patterns.
               </p>
               <p className="text-gray-700 leading-relaxed mb-6">
-                The calibration supervisor analyzes historical use cases—currently over 114 verified implementations—to 
-                determine optimal calibration factors for the DISC model's value and investment formulas. These factors 
+                The training supervisor analyzes historical use cases—currently over 114 verified implementations—to 
+                determine optimal training factors for the DISC model's value and investment formulas. These factors 
                 (ALPHA for revenue/experience impact, BETA for cost savings, GAMMA for risk mitigation) are continuously 
                 refined through bootstrapping analysis and cross-validation, ensuring the model remains accurate as new 
                 data becomes available.
               </p>
               
               <div className="bg-blue-light rounded-lg p-6 mb-6">
-                <h4 className="text-lg font-semibold mb-4 text-deep-navy">Calibration by Confidence Score</h4>
+                <h4 className="text-lg font-semibold mb-4 text-deep-navy">Training by Confidence Score</h4>
                 <p className="text-gray-700 text-sm mb-4">
-                  The following table illustrates how calibration factors stabilize as data confidence increases. 
+                  The following table illustrates how training factors stabilize as data confidence increases. 
                   This analysis, drawn from actual calibration runs, demonstrates the system's ability to adapt 
                   its predictions based on data quality—a critical capability when working with heterogeneous 
                   sources ranging from verified financial disclosures to industry estimates.
@@ -457,225 +457,12 @@ export default function MethodologyPage() {
               <div className="bg-gray-50 rounded-lg p-6">
                 <h4 className="text-lg font-semibold mb-3 text-deep-navy">Learning Loop</h4>
                 <p className="text-gray-700 text-sm leading-relaxed">
-                  The calibration process operates as a closed-loop system: predictions are made, outcomes are observed, 
+                  The training process operates as a closed-loop system: predictions are made, outcomes are observed, 
                   discrepancies are measured, and hyperparameters are adjusted. This reinforcement learning approach ensures 
                   that the framework becomes more accurate over time, learning from both successes and failures. The system 
                   maintains multiple calibration profiles—by confidence, by company size, by sector—allowing for nuanced 
                   adjustments that reflect the heterogeneity of real-world AI transformations.
                 </p>
-              </div>
-            </div>
-          </motion.div>
-        </section>
-
-        {/* Deep Dive: RAIROI Architecture */}
-        <section className="mb-20 bg-[#F5F5DC] rounded-lg p-8 border-2 border-deep-navy">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.6 }}
-          >
-            <h2 className="text-3xl font-bold text-deep-navy mb-8 text-center">Deep Dive: RAIROI Architecture</h2>
-
-            {/* Section 1: Hierarchical Orchestration Model */}
-            <div className="mb-16 bg-[#F5F5DC] rounded-lg p-8 border-2 border-deep-navy shadow-lg">
-              <h3 className="text-2xl font-bold text-deep-navy mb-8 text-center">A Hierarchical Orchestration Model</h3>
-              
-              {/* Full Agent Swarm Org Chart */}
-              <div className="flex flex-col items-center space-y-6 py-8 overflow-x-auto w-full">
-                {/* Level 1: Director */}
-                <div className="relative">
-                  <div className="bg-gradient-to-br from-electric-blue/20 to-electric-blue/10 border-2 border-electric-blue rounded-lg px-10 py-6 shadow-md min-w-[300px]">
-                    <div className="text-center">
-                      <div className="font-bold text-xl text-deep-navy mb-2">Director</div>
-                      <div className="font-semibold text-base text-deep-navy mb-3">Responsible AI Transformation Plan</div>
-                      <div className="text-sm text-gray-700 space-y-1">
-                        <div>7 supervisors</div>
-                        <div>60 workers</div>
-                        <div>43 tools</div>
-                      </div>
-                    </div>
-                  </div>
-                  {/* Vertical line down */}
-                  <div className="absolute left-1/2 top-full w-0.5 h-6 bg-deep-navy transform -translate-x-1/2"></div>
-                </div>
-
-                {/* Level 2: Supervisors */}
-                <div className="relative w-full max-w-7xl">
-                  {/* Horizontal line connecting to supervisors - elbow style */}
-                  <div className="absolute left-1/2 top-0 w-0.5 h-6 bg-deep-navy transform -translate-x-1/2"></div>
-                  <div className="absolute left-1/2 top-6 w-[calc(100%-4rem)] h-0.5 bg-deep-navy transform -translate-x-1/2"></div>
-                  
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6 px-4">
-                    {[
-                      { name: "Supervisor 1 Calibration & Introduction", workers: "14 Workers", tools: "6 Tools", outputs: ["Crawl", "Ingest", "Learn", "Verify", "Eval", "Exec Summary", "Assemble"] },
-                      { name: "Supervisor 2 Market Study", workers: "12 Workers", tools: "9 Tools", outputs: ["Executive Summary", "Who buys: Customer Segmentation", "What do they buy: Product & Value Proposition", "Where and how they buy: Geography & Distribution", "Who else: Competitive Position & Market Share", "What is the opportunity: Market Sizing & Growth", "Sources"] },
-                      { name: "Supervisor 3 Strategic Analysis", workers: "7 Workers", tools: "5 Tools", outputs: ["Executive Summary", "PESTEL Analysis", "Competitive Positioning", "Porter's Value Chain", "SWOT", "7S", "Porter's Five Forces"] },
-                      { name: "Supervisor 4 Org Portrait", workers: "8 Workers", tools: "6 Tools", outputs: ["Executive Summary", "Org Grid: Star", "Headcount by Department", "Role x Skill Heatmap: Proficiency", "Culture Radar", "Change Readiness Score", "Sources"] },
-                      { name: "Supervisor 5 AI Plan", workers: "9 Workers", tools: "7 Tools", outputs: ["Executive Summary", "AI Maturity v. Competition", "AI Initiatives Generation or Search", "DISC & 3 metrics", "Value Investment ROI", "ROI x Complexity", "Sources"] },
-                      { name: "Supervisor 6 Journey", workers: "10 Workers", tools: "10 Tools", outputs: ["Timeline", "Resource Plan", "Factory Skills", "Horizon 1", "Horizon 2", "Horizon 3", "Training Plan"] },
-                    ].map((supervisor, idx) => (
-                      <div key={idx} className="relative">
-                        {/* Supervisor Card */}
-                        <div className="bg-white border-2 border-deep-navy rounded-lg px-5 py-4 shadow-md">
-                          <div className="text-center mb-3">
-                            <div className="font-bold text-sm text-deep-navy mb-1.5">{supervisor.name}</div>
-                            <div className="text-xs text-gray-700 space-y-0.5">
-                              <div>{supervisor.workers}</div>
-                              <div>{supervisor.tools}</div>
-                            </div>
-                          </div>
-                          
-                          {/* Outputs/Tasks */}
-                          <div className="mt-3 pt-3 border-t border-deep-navy/20">
-                            <div className="space-y-1.5">
-                              {supervisor.outputs.map((output, oIdx) => (
-                                <div key={oIdx} className="bg-[#F5F5DC] border border-deep-navy/30 rounded px-2 py-1.5 text-xs text-gray-800 text-center">
-                                  {output}
-                                </div>
-                              ))}
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Section 2: RAIROI Sequence & Structure */}
-            <div className="mb-16 bg-white rounded-lg p-8 border-2 border-deep-navy shadow-lg">
-              <h3 className="text-2xl font-bold text-deep-navy mb-8 text-center">RAIROI Sequence & Structure</h3>
-              
-              {/* Process Flow */}
-              <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-2">
-                {/* Step 1 */}
-                <div className="flex flex-col items-center">
-                  <div className="bg-deep-navy text-white rounded-full w-20 h-20 flex items-center justify-center font-bold text-lg shadow-lg">
-                    1
-                  </div>
-                  <div className="mt-4 bg-white border-2 border-deep-navy rounded-lg px-6 py-4 shadow-md max-w-xs">
-                    <div className="font-semibold text-deep-navy mb-1">Planning</div>
-                    <div className="text-sm text-gray-600">User Request → Deconstruction</div>
-                  </div>
-                </div>
-
-                {/* Arrow */}
-                <div className="hidden md:block text-deep-navy text-4xl font-bold">→</div>
-                <div className="md:hidden text-deep-navy text-4xl font-bold rotate-90">→</div>
-
-                {/* Step 2 */}
-                <div className="flex flex-col items-center">
-                  <div className="bg-deep-navy text-white rounded-full w-20 h-20 flex items-center justify-center font-bold text-lg shadow-lg">
-                    2
-                  </div>
-                  <div className="mt-4 bg-white border-2 border-deep-navy rounded-lg px-6 py-4 shadow-md max-w-xs">
-                    <div className="font-semibold text-deep-navy mb-1">Asynchronous Execution</div>
-                    <div className="text-sm text-gray-600">Parallel tool use by Domain Agents</div>
-                  </div>
-                </div>
-
-                {/* Arrow */}
-                <div className="hidden md:block text-deep-navy text-4xl font-bold">→</div>
-                <div className="md:hidden text-deep-navy text-4xl font-bold rotate-90">→</div>
-
-                {/* Step 3 */}
-                <div className="flex flex-col items-center">
-                  <div className="bg-deep-navy text-white rounded-full w-20 h-20 flex items-center justify-center font-bold text-lg shadow-lg">
-                    3
-                  </div>
-                  <div className="mt-4 bg-white border-2 border-deep-navy rounded-lg px-6 py-4 shadow-md max-w-xs">
-                    <div className="font-semibold text-deep-navy mb-1">Synthesis</div>
-                    <div className="text-sm text-gray-600">Reviewer validates against NIST/EU Act → Final Output</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Section 3: Templated Classes */}
-            <div className="mb-16 bg-white rounded-lg p-8 border-2 border-deep-navy shadow-lg">
-              <h3 className="text-2xl font-bold text-deep-navy mb-6 text-center">Templated Classes for Scale</h3>
-              
-              {/* Code Window */}
-              <div className="bg-gray-800 rounded-lg p-6 overflow-x-auto border-2 border-gray-700">
-                <div className="flex items-center gap-2 mb-4">
-                  <div className="w-3 h-3 rounded-full bg-red-500"></div>
-                  <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
-                  <div className="w-3 h-3 rounded-full bg-green-500"></div>
-                  <span className="ml-4 text-gray-400 text-sm font-mono">BaseAgent.py</span>
-                </div>
-                <pre className="text-sm text-gray-300 font-mono leading-relaxed">
-{`class BaseAgent:
-    """
-    Base class for all RAIROI agents ensuring consistent
-    logging, error handling, and security boundaries.
-    """
-    
-    def __init__(self, role: str, tools: List[str], 
-                 guardrails: Dict[str, Any]):
-        self.role = role
-        self.tools = tools
-        self.guardrails = guardrails
-        self.logger = logging.getLogger(self.__class__.__name__)
-    
-    def step(self, context: Dict) -> Dict:
-        """
-        Standard agent execution cycle.
-        """
-        # Retrieve: Gather context and inputs
-        data = self.retrieve(context)
-        
-        # Reason: Process and analyze
-        reasoning = self.reason(data)
-        
-        # Act: Execute tools and generate output
-        result = self.act(reasoning)
-        
-        # Log: Record all actions for audit
-        self.log(result)
-        
-        return result`}
-                </pre>
-              </div>
-              <p className="mt-4 text-gray-700 text-sm italic text-center">
-                All agents inherit from a strict base class to ensure consistent logging, error handling, and security boundaries.
-              </p>
-            </div>
-
-            {/* Section 4: Separation of Concerns */}
-            <div className="bg-white rounded-lg p-8 border-2 border-deep-navy shadow-lg">
-              <h3 className="text-2xl font-bold text-deep-navy mb-8 text-center">Separation of Concerns</h3>
-              
-              {/* 2x2 Grid */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="bg-blue-light border-2 border-deep-navy rounded-lg p-6 shadow-md">
-                  <h4 className="font-bold text-lg text-deep-navy mb-3">Planner vs. Executor</h4>
-                  <p className="text-gray-700 text-sm leading-relaxed">
-                    Planners see the 'Goal' but have no tools. Executors have tools but see only the 'Task'.
-                  </p>
-                </div>
-                
-                <div className="bg-blue-light border-2 border-deep-navy rounded-lg p-6 shadow-md">
-                  <h4 className="font-bold text-lg text-deep-navy mb-3">Execution vs. Review</h4>
-                  <p className="text-gray-700 text-sm leading-relaxed">
-                    The agent that generates content never grades it. Validation is adversarial.
-                  </p>
-                </div>
-                
-                <div className="bg-blue-light border-2 border-deep-navy rounded-lg p-6 shadow-md">
-                  <h4 className="font-bold text-lg text-deep-navy mb-3">Memory Isolation</h4>
-                  <p className="text-gray-700 text-sm leading-relaxed">
-                    Short-term memory buffers are wiped between sessions to prevent data leakage.
-                  </p>
-                </div>
-                
-                <div className="bg-blue-light border-2 border-deep-navy rounded-lg p-6 shadow-md">
-                  <h4 className="font-bold text-lg text-deep-navy mb-3">Deterministic Tools</h4>
-                  <p className="text-gray-700 text-sm leading-relaxed">
-                    Agents execute pre-verified functions, not arbitrary code.
-                  </p>
-                </div>
               </div>
             </div>
           </motion.div>
