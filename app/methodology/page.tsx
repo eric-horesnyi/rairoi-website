@@ -418,55 +418,6 @@ export default function MethodologyPage() {
               </p>
             </div>
 
-            <div className="bg-white border-2 border-electric-blue rounded-lg p-8 mb-8">
-              <h3 className="text-2xl font-semibold mb-6 text-deep-navy">Reinforcement Learning & Hyperparameter Training</h3>
-              <p className="text-gray-700 leading-relaxed mb-6">
-                The RAIROI framework employs a continuous training mechanism that learns from real-world outcomes. 
-                Rather than relying on static models, the system uses reinforcement learning to adjust hyperparameters 
-                based on observed discrepancies between predicted and actual ROI. This process operates across multiple 
-                dimensions: confidence scores of source data, company size, sector characteristics, and temporal patterns.
-              </p>
-              <p className="text-gray-700 leading-relaxed mb-6">
-                The training supervisor analyzes historical use cases—currently over 114 verified implementations—to 
-                determine optimal training factors for the DISC model's value and investment formulas. These factors 
-                (ALPHA for revenue/experience impact, BETA for cost savings, GAMMA for risk mitigation) are continuously 
-                refined through bootstrapping analysis and cross-validation, ensuring the model remains accurate as new 
-                data becomes available.
-              </p>
-              
-              <div className="bg-blue-light rounded-lg p-6 mb-6">
-                <h4 className="text-lg font-semibold mb-4 text-deep-navy">Training by Confidence Score</h4>
-                <p className="text-gray-700 text-sm mb-4">
-                  The following table illustrates how training factors stabilize as data confidence increases. 
-                  This analysis, drawn from actual calibration runs, demonstrates the system's ability to adapt 
-                  its predictions based on data quality—a critical capability when working with heterogeneous 
-                  sources ranging from verified financial disclosures to industry estimates.
-                </p>
-                <CalibrationTable
-                  title="Hyperparameter calibration by Confidence Threshold"
-                  data={[
-                    { threshold: '>= 0.9', useCases: 19, alpha: 0.0886, beta: 0.2464 },
-                    { threshold: '>= 0.8', useCases: 44, alpha: 0.0543, beta: 0.2188, gamma: 0.5369 },
-                    { threshold: '>= 0.7', useCases: 68, alpha: 0.0519, beta: 0.2031, gamma: 0.5369 },
-                    { threshold: '>= 0.6', useCases: 81, alpha: 0.0520, beta: 0.2030, gamma: 0.5369 },
-                    { threshold: '>= 0.5', useCases: 86, alpha: 0.0519, beta: 0.2031, gamma: 0.5369 },
-                    { threshold: '>= 0.4', useCases: 87, alpha: 0.0519, beta: 0.2031, gamma: 0.5369 },
-                  ]}
-                  showGamma={true}
-                />
-              </div>
-
-              <div className="bg-gray-50 rounded-lg p-6">
-                <h4 className="text-lg font-semibold mb-3 text-deep-navy">Learning Loop</h4>
-                <p className="text-gray-700 text-sm leading-relaxed">
-                  The training process operates as a closed-loop system: predictions are made, outcomes are observed, 
-                  discrepancies are measured, and hyperparameters are adjusted. This reinforcement learning approach ensures 
-                  that the framework becomes more accurate over time, learning from both successes and failures. The system 
-                  maintains multiple calibration profiles—by confidence, by company size, by sector—allowing for nuanced 
-                  adjustments that reflect the heterogeneity of real-world AI transformations.
-                </p>
-              </div>
-            </div>
           </motion.div>
         </section>
 
@@ -678,6 +629,65 @@ export default function MethodologyPage() {
                     Agents execute pre-verified functions, not arbitrary code.
                   </p>
                 </div>
+              </div>
+            </div>
+          </motion.div>
+        </section>
+
+        {/* Section F: Reinforcement Learning & Hyperparameter Training */}
+        <section className="mb-20">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.7 }}
+          >
+            <div className="bg-white border-2 border-electric-blue rounded-lg p-8 mb-8">
+              <h3 className="text-2xl font-semibold mb-6 text-deep-navy">Reinforcement Learning & Hyperparameter Training</h3>
+              <p className="text-gray-700 leading-relaxed mb-6">
+                The RAIROI framework employs a continuous training mechanism that learns from real-world outcomes. 
+                Rather than relying on static models, the system uses reinforcement learning to adjust hyperparameters 
+                based on observed discrepancies between predicted and actual ROI. This process operates across multiple 
+                dimensions: confidence scores of source data, company size, sector characteristics, and temporal patterns.
+              </p>
+              <p className="text-gray-700 leading-relaxed mb-6">
+                The training supervisor analyzes historical use cases—currently over 114 verified implementations—to 
+                determine optimal training factors for the DISC model's value and investment formulas. These factors 
+                (ALPHA for revenue/experience impact, BETA for cost savings, GAMMA for risk mitigation) are continuously 
+                refined through bootstrapping analysis and cross-validation, ensuring the model remains accurate as new 
+                data becomes available.
+              </p>
+              
+              <div className="bg-blue-light rounded-lg p-6 mb-6">
+                <h4 className="text-lg font-semibold mb-4 text-deep-navy">Training by Confidence Score</h4>
+                <p className="text-gray-700 text-sm mb-4">
+                  The following table illustrates how training factors stabilize as data confidence increases. 
+                  This analysis, drawn from actual calibration runs, demonstrates the system's ability to adapt 
+                  its predictions based on data quality—a critical capability when working with heterogeneous 
+                  sources ranging from verified financial disclosures to industry estimates.
+                </p>
+                <CalibrationTable
+                  title="Hyperparameter calibration by Confidence Threshold"
+                  data={[
+                    { threshold: '>= 0.9', useCases: 19, alpha: 0.0886, beta: 0.2464 },
+                    { threshold: '>= 0.8', useCases: 44, alpha: 0.0543, beta: 0.2188, gamma: 0.5369 },
+                    { threshold: '>= 0.7', useCases: 68, alpha: 0.0519, beta: 0.2031, gamma: 0.5369 },
+                    { threshold: '>= 0.6', useCases: 81, alpha: 0.0520, beta: 0.2030, gamma: 0.5369 },
+                    { threshold: '>= 0.5', useCases: 86, alpha: 0.0519, beta: 0.2031, gamma: 0.5369 },
+                    { threshold: '>= 0.4', useCases: 87, alpha: 0.0519, beta: 0.2031, gamma: 0.5369 },
+                  ]}
+                  showGamma={true}
+                />
+              </div>
+
+              <div className="bg-gray-50 rounded-lg p-6">
+                <h4 className="text-lg font-semibold mb-3 text-deep-navy">Learning Loop</h4>
+                <p className="text-gray-700 text-sm leading-relaxed">
+                  The training process operates as a closed-loop system: predictions are made, outcomes are observed, 
+                  discrepancies are measured, and hyperparameters are adjusted. This reinforcement learning approach ensures 
+                  that the framework becomes more accurate over time, learning from both successes and failures. The system 
+                  maintains multiple calibration profiles—by confidence, by company size, by sector—allowing for nuanced 
+                  adjustments that reflect the heterogeneity of real-world AI transformations.
+                </p>
               </div>
             </div>
           </motion.div>
