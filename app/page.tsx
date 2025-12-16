@@ -15,9 +15,10 @@ export default function Home() {
           <motion.h1
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-4xl md:text-5xl lg:text-6xl font-bold text-deep-navy mb-6"
+            className="text-4xl md:text-6xl font-bold text-deep-navy mb-2 leading-tight"
           >
-            RAIROI: The Predictive Engine for AI Value.
+            <span className="block">Responsible AI</span>
+            <span className="block">Return On Investment</span>
           </motion.h1>
           <p className="text-lg md:text-2xl text-gray-700 mb-8 max-w-4xl mx-auto leading-relaxed">
             We move transformation from theoretical strategy to calculated financial certainty using agentic inference.
