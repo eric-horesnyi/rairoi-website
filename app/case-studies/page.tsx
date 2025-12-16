@@ -290,14 +290,14 @@ export default function CaseStudiesPage() {
               <a href="https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/enduring-ideas-the-7-s-framework" target="_blank" rel="noopener noreferrer" className="text-electric-blue hover:underline ml-1">7S Framework</a>
             </li>
             <li>
-              <strong>Portrait:</strong> Organizational Structure, Headcount Distribution, Skills Matrix, Culture Analysis, Change Readiness Assessment
+              <strong>Portrait:</strong> Organizational Structure, Headcount Distribution, Skills Matrix, Culture Analysis, Change Readiness Inference
             </li>
             <li>
               <strong>AI Plan:</strong> AI Competitive Analysis (AI Compete), Portfolio Search & Generation, DISC Framework Enrichment, Impact & Complexity Metrics (DISC3Metrics), 
               Acceptability Analysis, Value/ROI Calculations, ROI Bubble Chart, Strategic Heatmap, Initiative Portfolio
             </li>
             <li>
-              <strong>Journey:</strong> Resource Planning, Value over Time, Headcount Planning, Baseline Assessment, 
+              <strong>Journey:</strong> Resource Planning, Value over Time, Headcount Planning, Baseline Inference, 
               Horizon 1 (Short-term: 0-6 months), Horizon 2 (Medium-term: 6-18 months), Horizon 3 (Long-term: 18-36 months), 
               Department View, Training Plan
             </li>

@@ -8,37 +8,59 @@ import ROITicker from '@/components/ROITicker'
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-light to-white">
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-[#FFF7E6]">
       {/* Hero Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
         <div className="text-center mb-12">
-          <motion.h1 
+          <motion.h1
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-5xl md:text-6xl font-bold text-deep-navy mb-6"
+            className="text-4xl md:text-5xl lg:text-6xl font-bold text-deep-navy mb-6"
           >
-            <span className="block">Responsible AI</span>
-            <span className="block">Return On Investment</span>
+            RAIROI: The Predictive Engine for AI Value.
           </motion.h1>
-          <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed">
-            From initial investment to sustained acceleration: observations from analyzing AI transformations 
-            across major indices suggest patterns worth examining. This framework attempts to make sense of 
-            the J-Curve phenomenon and offers a structured approach to measuring return on investment.
+          <p className="text-lg md:text-2xl text-gray-700 mb-8 max-w-4xl mx-auto leading-relaxed">
+            We move transformation from theoretical strategy to calculated financial certainty using agentic inference.
+            Supervised models, trained on verified cases, infer the ROI trajectory that best matches your organizational reality.
           </p>
+
+          {/* Model Logic Bar */}
+          <div className="mb-8">
+            <div className="inline-flex flex-col md:flex-row items-stretch md:items-center justify-center gap-3 md:gap-4 bg-white/80 border border-gray-200 rounded-xl px-4 py-4 shadow-sm">
+              <div className="px-4 py-2 rounded-lg border border-gray-300 bg-white text-sm md:text-base">
+                <span className="font-semibold text-deep-navy">Input:</span>{' '}
+                <span className="text-gray-700">Your Features (X)</span>
+              </div>
+              <div className="text-deep-navy text-2xl font-bold hidden md:block">→</div>
+              <div className="text-deep-navy text-2xl font-bold md:hidden text-center">↓</div>
+              <div className="px-4 py-2 rounded-lg border border-gray-300 bg-white text-sm md:text-base">
+                <span className="font-semibold text-deep-navy">Engine:</span>{' '}
+                <span className="text-gray-700">Agentic Inference</span>
+              </div>
+              <div className="text-deep-navy text-2xl font-bold hidden md:block">→</div>
+              <div className="text-deep-navy text-2xl font-bold md:hidden text-center">↓</div>
+              <div className="px-4 py-2 rounded-lg border border-gray-300 bg-white text-sm md:text-base">
+                <span className="font-semibold text-deep-navy">Output:</span>{' '}
+                <span className="text-gray-700">ROI Prediction (Y)</span>
+              </div>
+            </div>
+          </div>
+
+          {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              href="/simulator"
+              className="bg-amber-400 text-deep-navy px-8 py-4 rounded-lg font-semibold text-lg hover:bg-amber-500 transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
+            >
+              Start Inference
+              <BarChart3 className="w-5 h-5" />
+            </Link>
             <Link
               href="/methodology"
               className="bg-electric-blue text-deep-navy px-8 py-4 rounded-lg font-semibold text-lg hover:bg-opacity-90 transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
             >
               Explore the Framework
               <ArrowRight className="w-5 h-5" />
-            </Link>
-            <Link
-              href="/simulator"
-              className="bg-deep-navy text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-opacity-90 transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
-            >
-              Simulate Your ROI
-              <BarChart3 className="w-5 h-5" />
             </Link>
           </div>
         </div>
@@ -70,7 +92,7 @@ export default function Home() {
             <p className="text-gray-600 leading-relaxed">
               A structured approach combining five dimensions with a DISC methodology, designed to provide 
               comprehensive coverage of AI transformation challenges. The framework evolves through continuous 
-              calibration against real-world outcomes.
+              training on high-impact, ground-truth outcomes.
             </p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-lg">

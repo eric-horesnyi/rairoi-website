@@ -2,6 +2,10 @@
 
 import React from 'react'
 
+// Training Data View (Ground Truth)
+// This component renders the VALUE training table used to inspect
+// how features (X) and labels (Y) behave across confidence thresholds.
+
 interface CalibrationTableProps {
   title: string
   data: {
@@ -17,7 +21,12 @@ interface CalibrationTableProps {
 const CalibrationTable: React.FC<CalibrationTableProps> = ({ title, data, showGamma = false }) => {
   return (
     <div className="bg-white rounded-lg shadow-lg p-6 mb-8">
-      <h3 className="text-xl font-bold mb-4 text-deep-navy">{title}</h3>
+      <h3 className="text-xl font-bold mb-2 text-deep-navy">{title}</h3>
+      <p className="text-sm text-gray-600 mb-4 italic">
+        The Ground Truth: A proprietary training set of verified AI implementations mapping organizational&nbsp;
+        <span className="font-semibold text-deep-navy">Features (X)</span> to financial&nbsp;
+        <span className="font-semibold text-deep-navy">Labels (Y)</span>.
+      </p>
       <div className="overflow-x-auto">
         <table className="min-w-full border-collapse border border-gray-300">
           <thead>
@@ -53,4 +62,5 @@ const CalibrationTable: React.FC<CalibrationTableProps> = ({ title, data, showGa
 }
 
 export default CalibrationTable
+
 

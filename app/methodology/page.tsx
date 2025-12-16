@@ -51,8 +51,10 @@ export default function MethodologyPage() {
           <h1 className="text-4xl md:text-5xl font-bold text-deep-navy mb-4">
             The RAIROI Methodology
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            An analytical framework drawing on economic theory, systems architecture, and case study observations
+          <p className="text-xl text-gray-600 max-w-4xl mx-auto">
+            We do not guess. We compute. Our engine uses Supervised Learning, trained on high-impact use cases.
+            We extract your organizational Features (Strategic Intent, Proficiency, OPEX), run Inference through
+            our Agent Swarm, and predict your optimal ROI trajectory within strict compliance boundaries.
           </p>
         </motion.div>
 
@@ -152,7 +154,7 @@ export default function MethodologyPage() {
               <p className="text-gray-700 text-sm leading-relaxed">
                 The RAIROI framework incorporates Responsible AI principles throughout its methodology. The Governance 
                 dimension explicitly addresses risk levels aligned with the EU AI Act, while the organizational change 
-                management approach ensures that AI adoption considers acceptability and workforce impact. The calibration 
+                management approach ensures that AI adoption considers acceptability and workforce impact. The training 
                 mechanisms described in the Data Architecture section include bias detection and fairness metrics, ensuring 
                 that the framework not only delivers ROI but does so responsibly.
               </p>
@@ -243,7 +245,7 @@ export default function MethodologyPage() {
               <p className="mt-4 text-gray-600 text-center leading-relaxed">
                 Where α, β, γ, and δ are calibrated weights based on organizational priorities and sector characteristics. 
                 These weights are continuously refined through reinforcement learning, using observed outcomes from 
-                real-world implementations to improve prediction accuracy. The calibration process, detailed in the 
+                real-world implementations to improve prediction accuracy. The training process, detailed in the 
                 Data Architecture section, ensures the framework adapts as new evidence becomes available.
               </p>
             </div>
