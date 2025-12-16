@@ -443,7 +443,7 @@ export default function MethodologyPage() {
                   sources ranging from verified financial disclosures to industry estimates.
                 </p>
                 <CalibrationTable
-                  title="VALUE Calibration Factors by Confidence Threshold"
+                  title="Hyperparameter calibration by Confidence Threshold"
                   data={[
                     { threshold: '>= 0.9', useCases: 19, alpha: 0.0886, beta: 0.2464 },
                     { threshold: '>= 0.8', useCases: 44, alpha: 0.0543, beta: 0.2188, gamma: 0.5369 },
